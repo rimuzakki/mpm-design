@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MPM</title>
 	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -172,6 +174,11 @@
 			            </div>
 			        </div><!--card-->
 				</div><!--col-->
+				<div class="col s12">
+					<button class="btn col s8 push-s2 waves-effect waves-light" type="submit" name="action">Submit WPT Test
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
 			</div><!--row-->
 		</form>
 	</div><!--container-->
