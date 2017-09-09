@@ -23,10 +23,23 @@ nav {
 .answer li {
     width: 50%;
     float: left;
+    padding: 5px 0px;
 }
 .card .card-content {
     padding: 10px 15px;
 }
+.card .card-action {
+	padding: 10px;
+}
 .card .card-title {
 	font-size: 16px;
+}
+.btn, .btn-large {
+	background-color: #00aff0;
+}
+.btn:hover, .btn-large:hover {
+	background-color: #24c4ff;
+}
+.btn:focus, .btn-large:focus, .btn-floating:focus {
+	background-color: #0abdff;
 }

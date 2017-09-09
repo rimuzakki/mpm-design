@@ -178,7 +178,4 @@ for(var i = 1; i <= 50; i++) {
 		</form>
 	</div><!--container-->
 </section>
-</body>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-</html>
+<?php require_once('inc/footer.inc.php'); ?>
