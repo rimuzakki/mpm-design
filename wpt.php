@@ -1,24 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MPM</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="navbar-fixed">
+	<nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo center"><img src="assets/MPM_Logo Group_White.png"></a>
+	      <ul class="left">
+	        <li><a href="#">Assesment Sample</a></li>
+	      </ul>
+	      <ul class="right timer">
+	        <li><a href="#"><p id="time_left"></p></a></li>
+	      </ul>
+	    </div>
+  	</nav>
+</div>
 
-<?php require_once('inc/header.inc.php'); ?>
-<script>
-function handleClick()
-  {
-var amountCorrect = 0;
-for(var i = 1; i <= 50; i++) {
-  var radios = document.getElementsByName('q'+i);
-  for(var j = 0; j < radios.length; j++) {
-    var radio = radios[j];
-    if(radio.value == "corr" && radio.checked) {
-      amountCorrect++;
-    }
-  }
- }
-    document.wptform.skor.value = ""+amountCorrect;
-		return true;
-  }
-</script>
-
-<section id="quiz">
+<section id="quiz-wpt">
 	<div class="container">
 		<div class="row">
 			<div class="col s12">
@@ -31,6 +35,8 @@ for(var i = 1; i <= 50; i++) {
 		 <input type="hidden" name="skor" value="0">
 			<div class="row">
 				<div class="col s12">
+
+					<!-- question 1 -->
 					<div class="card">
 			            <div class="card-content">
 			              <span class="card-title">1. Bulan terakhir pada awal tahun ini adalah</span>
@@ -61,6 +67,7 @@ for(var i = 1; i <= 50; i++) {
 			            </div>
 			        </div><!--card-->
 
+			        <!-- question 2 -->
 			        <div class="card">
 			            <div class="card-content">
 			              <span class="card-title">2. MENANGKAP adalah lawan kata dari</span>
@@ -91,6 +98,7 @@ for(var i = 1; i <= 50; i++) {
 			            </div>
 			        </div><!--card-->
 
+			        <!-- question 3 -->
 			        <div class="card">
 			            <div class="card-content">
 			              <span class="card-title">3. Sebagian besar hal dibawah ini serupa satu sama lain. Manakah salah satu diantaranya yang kurang serupa dengan yang lain?</span>
@@ -121,6 +129,7 @@ for(var i = 1; i <= 50; i++) {
 			            </div>
 			        </div><!--card-->
 
+			        <!-- question 4 -->
 			        <div class="card">
 			            <div class="card-content">
 			              <span class="card-title">4. Jawablah dengan menuliskan YA atau TIDAK. Apakah “VIP” berarti ‘jawablah yang tidak perlu</span>
@@ -139,6 +148,7 @@ for(var i = 1; i <= 50; i++) {
 			            </div>
 			        </div><!--card-->
 
+			        <!-- question 5 -->
 			        <div class="card">
 			            <div class="card-content">
 			              <span class="card-title">5.Dalam kelompok kata berikut, manakah kata yang berbeda dari kata yang lain?</span>
@@ -169,13 +179,50 @@ for(var i = 1; i <= 50; i++) {
 			            </div>
 			        </div><!--card-->
 				</div><!--col-->
-				<div class="col s12">
+				<!-- <div class="col s12">
 					<button class="btn-large col s8 push-s2 waves-effect waves-light" type="submit" name="action">Submit WPT Test
 						<i class="material-icons right">send</i>
 					</button>
+				</div> -->
+
+				<div class="col s12">
+					<ul class="pagination center">
+					    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+					    <li class="active"><a href="#!">1</a></li>
+					    <li class="waves-effect"><a href="#!">2</a></li>
+					    <li class="waves-effect"><a href="#!">3</a></li>
+					    <li class="waves-effect"><a href="#!">4</a></li>
+					    <li class="waves-effect"><a href="#!">5</a></li>
+					    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+					  </ul>
 				</div>
+
+				<!-- button corner right -->
+				<div class="fab-right">
+				    <button class="btn-floating btn-large waves-effect waves-light" type="submit" name="action">
+				    	<i class="material-icons right">send</i>
+				    </button>
+				</div>
+
 			</div><!--row-->
 		</form>
 	</div><!--container-->
 </section>
+<script type="text/javascript">
+function handleClick()
+  {
+var amountCorrect = 0;
+for(var i = 1; i <= 50; i++) {
+  var radios = document.getElementsByName('q'+i);
+  for(var j = 0; j < radios.length; j++) {
+    var radio = radios[j];
+    if(radio.value == "corr" && radio.checked) {
+      amountCorrect++;
+    }
+  }
+ }
+document.wptform.skor.value = ""+amountCorrect;
+  return true;
+}
+</script>
 <?php require_once('inc/footer.inc.php'); ?>
