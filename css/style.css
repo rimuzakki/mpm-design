@@ -7,12 +7,6 @@ nav {
 .brand-logo img {
 	width: 150px;
 }
-@media only screen and (max-width: 992px) {
-	.brand-logo img {
-		width: 100px;
-		margin: 10px 0px;
-	}
-}
 .answer {
     display: inline-block;
     margin: 0px;
@@ -42,4 +36,52 @@ nav {
 }
 .btn:focus, .btn-large:focus, .btn-floating:focus {
 	background-color: #0abdff;
+}
+.timer p {
+    margin: 0;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #00aff0;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after {
+    border: 2px solid #00aff0;
+}
+
+/* CIFT */
+#quiz-cift label > input { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+#quiz-cift label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+
+#quiz-cift label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #0cc8de;
+}
+#quiz-cift .answer td {
+	text-align: center;
+}
+.fab-right {
+	position: fixed;
+    right: 23px;
+    bottom: 23px;
+    padding-top: 15px;
+    margin-bottom: 0;
+    z-index: 997;
+}
+/* responsive settings */
+@media only screen and (max-width: 992px) {
+	.brand-logo img {
+		width: 100px;
+		margin: 10px 0px;
+	}
+	#quiz-cift .answer td {
+		width: 33.33%;
+	    float: left;
+	    min-height: 160px;
+	}
 }

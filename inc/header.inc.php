@@ -15,8 +15,8 @@
 	      <ul class="left">
 	        <li><a href="#">Assesment Sample</a></li>
 	      </ul>
-	      <ul class="right">
-	        <li><a href="#">Timer</a></li>
+	      <ul class="right timer">
+	        <li><a href="#"><p id="time_left"></p></a></li>
 	      </ul>
 	    </div>
   	</nav>
