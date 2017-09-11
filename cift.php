@@ -287,32 +287,11 @@
 
 			        
 				</div><!--col-->
-				<!-- <div class="col s12">
+				<div class="col s12">
 					<button class="btn-large col s8 push-s2 waves-effect waves-light" type="submit" name="action">Submit CIFT Test
 						<i class="material-icons right">send</i>
 					</button>
-				</div> -->
-				
-				<div class="col s12">
-					<ul class="pagination center">
-					    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-					    <li class="active"><a href="#!">1</a></li>
-					    <li class="waves-effect"><a href="#!">2</a></li>
-					    <li class="waves-effect"><a href="#!">3</a></li>
-					    <li class="waves-effect"><a href="#!">4</a></li>
-					    <li class="waves-effect"><a href="#!">5</a></li>
-					    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-					  </ul>
-				</div>
-
-				<!-- button corner right -->
-				<div class="fab-right">
-				    <button class="btn-floating btn-large waves-effect waves-light" type="submit" name="action">
-				    	<i class="material-icons right">send</i>
-				    </button>
-				</div>
-
-
+				</div>	
 			</div><!--row-->
 		</form>
 	</div><!--container-->

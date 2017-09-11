@@ -64,3 +64,8 @@ function LeadingZero(Time) {
   return (Time < 10) ? "0" + Time : + Time;
 }
 
+
+// validation form
+// $(document).ready(function(){
+//    $('#loginform').Validate();
+// });

@@ -73,6 +73,103 @@ nav {
     margin-bottom: 0;
     z-index: 997;
 }
+/*Login Page*/
+#login-page {
+    background: #00aff0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #009CD6, #00aff0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #009CD6, #00aff0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+.card-login .card-title {
+	text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px !important;
+}
+.card-login .card-image {
+	background-color: #f26f21;
+	position: relative;
+  	z-index: 1;
+  	height: 125px;
+  	display: table-cell;
+    vertical-align: bottom;
+}
+.card .card-image img {
+	width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+.card-login .card-image:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 65%;
+  /*margin-right: 1px;*/
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-shadow: inset 0 -6px 10px -3px rgba(0,0,0,0.14), inset 0 -1px 18px -10px rgba(0,0,0,0.12), inset 0 -3px 5px -4px rgba(0,0,0,0.3);
+  box-shadow: inset 0 -6px 10px -3px rgba(0,0,0,0.14), inset 0 -1px 18px -10px rgba(0,0,0,0.12), inset 0 -3px 5px -4px rgba(0,0,0,0.3);
+}
+.card-login .card-image:after {
+  bottom: 0;
+  -webkit-transform: skewY(10deg);
+          transform: skewY(10deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+
+.card-login .card-content {
+  position: relative;
+  z-index: 1;
+  margin-top: 65px;
+}
+.card-login .card-content:before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  /*-webkit-box-shadow: 0 -6px 10px -3px rgba(0,0,0,0.14), 0 -1px 18px -8px rgba(0,0,0,0.12), 0 -3px 5px -2px rgba(0,0,0,0.3);
+  box-shadow: 0 -6px 10px -3px rgba(0,0,0,0.14), 0 -1px 18px -8px rgba(0,0,0,0.12), 0 -3px 5px -2px rgba(0,0,0,0.3);*/
+}
+.card-login .card-content:before {
+  top: 0;
+  -webkit-transform: skewY(10deg);
+          transform: skewY(10deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+/* form */
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #00aff0;
+    -webkit-box-shadow: 0 1px 0 0 #00aff0;
+    box-shadow: 0 1px 0 0 #00aff0;
+}
+input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown {
+    border-bottom: 1px solid #0136a0;
+    -webkit-box-shadow: 0 1px 0 0 #0136a0;
+    box-shadow: 0 1px 0 0 #0136a0; 
+}
+.input-field .prefix.active {
+	color: #00aff0;
+}
 /* responsive settings */
 @media only screen and (max-width: 992px) {
 	.brand-logo img {
