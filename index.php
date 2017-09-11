@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<?php
+	require_once('inc/db.inc.php');
+?>
 <section id="login-page" class="vertical-center">
 	<div class="container">
 		<div class="row" >
@@ -24,14 +27,14 @@
 					      <div class="row">
 					        <div class="input-field col s12">
 					          <i class="material-icons prefix">account_circle</i>
-					          <input id="icon_prefix" type="text" class="validate">
+					          <input id="icon_prefix" type="text" class="validate" name="name">
 					          <label for="icon_prefix">Your Name</label>
 					        </div>
 					       </div>
 					       <div class="row">
 					        <div class="input-field col s12">
 					          <i class="material-icons prefix">phone</i>
-					          <input id="icon_telephone" type="tel" class="validate" pattern="[0-9]+">
+					          <input id="icon_telephone" name="phone" type="tel" class="validate" pattern="[0-9]+">
 					          <label for="icon_telephone">Phone Number (08xxxxxxxxxx)</label>
 					        </div>
 					      </div>

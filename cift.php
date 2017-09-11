@@ -12,9 +12,9 @@
 	<nav>
 	    <div class="nav-wrapper">
 	      <a href="#" class="brand-logo center"><img src="assets/MPM_Logo Group_White.png"></a>
-	      <ul class="left">
+	      <!-- <ul class="left">
 	        <li><a href="#">Assesment Sample</a></li>
-	      </ul>
+	      </ul> -->
 	      <ul class="right timer">
 	        <li><a href="#"><p id="time_left"></p></a></li>
 	      </ul>
